@@ -1,0 +1,48 @@
+name: recipe_browser_app
+description: "A 5th Year Software Engineering Project - Recipe Browser App"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Mandatory for Unit 4 Networking & REST APIs
+  http: ^1.1.0
+
+  # Required for opening YouTube links in Track C
+  url_launcher: ^6.2.0
+
+  # State Management
+  provider: ^6.0.0
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Fixed indentation for splash screen tool
+  flutter_native_splash: ^2.3.7
+
+  # For Section 6 (Code Quality)
+  flutter_lints: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  # Ensure these assets actually exist in your project folder!
+  assets:
+    - assets/images/logo.jpg
+
+# Splash screen configuration
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/logo.jpg
+  android_12:
+    image: assets/images/logo.jpg
+    color: "#ffffff"
